@@ -62,7 +62,12 @@
             <img src="assets/img/icons8-menu-94.png" alt="" class="nav__img">
         </nav>
     </header>
-
+    <ul class="tabs">
+        <li data-whatsapp="communities"><i class="fas fa-users"></i></li>
+        <li data-whatsapp="chats" class="active">chats <span class="num">4</span></li>
+        <li data-whatsapp="status">status</li>
+        <li data-whatsapp="calls">calls</li>
+    </ul>
     <main>
         <!-- ================side bar menu================= -->
         <div class="sidebar active">
@@ -184,33 +189,50 @@
         <!-- ================end of side bar menu =============== -->
 
         <!--=============== HOME ===============-->
-        <section class="container section section__height" id="home">
-            <h2 class="section__title">New stock</h2>
-        </section>
+        <div class="container section section__height" id="home">
+            <div class="content">
+                <section class="box communities">
+                    <div class="community-img">
+                        <img src="assets/img/communities.svg" alt="">
+                    </div>
+                    <div class="community-text">
+                        <h3>Introduction communities</h3>
+                        <p>Easily orginanize your related groups and send announcements</p>
+                    </div>
+                    <div class="button"><button class="btn">start your community</button></div>
+                </section>
+                <section class="box charts"></section>
+
+                <section class="box"></section>
+                <section class="box"></section>
+            </div>
+
+        </div>
 
         <!--=============== ABOUT ===============-->
-        <section class="container section section__height" id="about">
+        <!-- <section class="container section section__height" id="about">
             <h2 class="section__title">About</h2>
-        </section>
+        </section> -->
 
         <!--=============== SKILLS ===============-->
-        <section class="container section section__height" id="skills">
+        <!-- <section class="container section section__height" id="skills">
             <h2 class="section__title">Skills</h2>
-        </section>
+        </section> -->
 
         <!--=============== PORTFOLIO ===============-->
-        <section class="container section section__height" id="portfolio">
+        <!-- <section class="container section section__height" id="portfolio">
             <h2 class="section__title">Portfolio</h2>
-        </section>
+        </section> -->
 
         <!--=============== CONTACTME ===============-->
-        <section class="container section section__height" id="contactme">
+        <!-- <section class="container section section__height" id="contactme">
             <h2 class="section__title">Contactme</h2>
-        </section>
+        </section> -->
     </main>
 
 
     <!--=============== MAIN JS ===============-->
+    <script src="https://kit.fontawesome.com/9e5ba2e3f5.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
         integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
         crossorigin="anonymous"></script>

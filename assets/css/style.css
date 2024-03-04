@@ -587,16 +587,16 @@ img {
 
     /* content */
     .content {
-        position: relative;
+        /* position: relative; */
         width: 100%;
         display: flex;
         overflow: hidden;
     }
 
     .content .box {
-        position: relative;
+        /* position: relative; */
         /* width: 0rem; */
-        visibility: visible;
+        visibility: hidden;
         opacity: 0;
         transition: all .3s ease-in-out;
     }

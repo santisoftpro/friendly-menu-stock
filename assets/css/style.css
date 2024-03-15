@@ -59,7 +59,7 @@ body {
     margin: var(--header-height) 0 0 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
-    background-color: #5b6677;
+    background-color: #f3eeee;
     min-height: 100vh;
     color: var(--text-color);
 }
@@ -651,5 +651,87 @@ img {
         transition: all .5s ease-in-out;
     }
 
+    .content .communities .button .btn:hover {
+        background-color: #017561;
+    }
+
+
+
     /*End Chat Box*/
+
+
+    .box .data {
+        position: relative;
+        width: 100%;
+        height: 51rem;
+
+    }
+
+    .box .chat-list {
+        position: relative;
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    .box .chat-list .chat {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1.5rem 1rem;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+    }
+
+    .box .chat-list .chat:hover {
+        background-color: #f5f5f5;
+    }
+
+    .box .chat-list .chat .img-box {
+        position: relative;
+        min-width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .box .chat-list .chat .img-box {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .box .chat-list .chat .details {
+        width: 100%;
+
+    }
+
+    .box .chat-list .details .chat-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .box .chat-list .details .chat-head h4 {
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 1.4rem;
+        color: #111b21;
+    }
+
+    .box .chat-list .details .chat-head .time {
+        color: var(--garyColor);
+        font-size: 1.1rem;
+        text-transform: capitalize;
+    }
+
+    .box .chat-list .chat.uread .details .chat-head .time {
+        color: var(--greenColor);
+
+    }
+
+    .box .chat-list .details .chat-head .time {}
+
+    /* chat box */
+
 }

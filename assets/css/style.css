@@ -608,9 +608,18 @@ img {
     }
 
     .content .communities {
-        display: flex;
+        display: none;
         align-items: center;
         flex-direction: column;
+        width: 100%;
+    }
+
+    .content .communities.active {
+        display: flex;
+    }
+
+    .charts {
+        width: 100%;
     }
 
     .content .communities .community-img {
@@ -625,12 +634,12 @@ img {
     .content .communities .community-text h3 {
         font-size: 2.4rem;
         font-weight: 700;
-        color: var(--whiteColor);
+        color: var(--title-color);
     }
 
     .content .communities .community-text p {
         font-size: 1.4rem;
-        color: #f1f1f1;
+        color: var(--blackColor);
         line-height: 1.5;
         margin-top: 1rem;
         margin-bottom: 3rem;
@@ -663,7 +672,7 @@ img {
     .box .data {
         position: relative;
         width: 100%;
-        height: 51rem;
+        height: 50rem;
 
     }
 
@@ -689,8 +698,8 @@ img {
 
     .box .chat-list .chat .img-box {
         position: relative;
-        min-width: 4.5rem;
-        height: 4.5rem;
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
         overflow: hidden;
     }

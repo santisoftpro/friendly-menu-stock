@@ -754,7 +754,10 @@ img {
         text-overflow: ellipsis;
         -webkit-box-orient: vertical;
     }
-
+    .box .chat-list .chat .details .message p span{
+        font-weight: bold;
+        color:  var(--mainColor);
+    }
     .box .chat-list .chat .details .message b {
         min-width: 2rem;
         height: 2rem;

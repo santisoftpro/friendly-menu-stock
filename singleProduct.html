@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Responsive stock</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">C.Names</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home-alt nav__icon'></i>
+                            <span class="nav__name">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user nav__icon'></i>
+                            <span class="nav__name">About</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-book-alt nav__icon'></i>
+                            <span class="nav__name">Skills</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class='bx bx-briefcase-alt nav__icon'></i>
+                            <span class="nav__name">Portfolio</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contactme" class="nav__link">
+                            <i class='bx bx-message-square-detail nav__icon'></i>
+                            <span class="nav__name">Contactme</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <img src="assets/img/icons8-menu-94.png" alt="" class="nav__img">
+        </nav>
+    </header>
+    <ul class="tabs">
+        <li data-whatsapp="communities"><i class="fas fa-users"></i></li>
+        <li data-whatsapp="chats" class="active">Stock <span class="num">4</span></li>
+        <li data-whatsapp="status">Sells</li>
+        <li data-whatsapp="calls">Reports</li>
+    </ul>
+    <main>
+        <!-- ================side bar menu================= -->
+        <div class="sidebar active">
+            <div class="menu-btn">
+                <i class="ph-bold ph-caret-left"></i>
+            </div>
+            <div class="head">
+                <div class="user-img">
+                    <img src="/assets/img/user.jpg" alt="">
+                </div>
+                <div class="user-details">
+                    <p class="title">Web Developer</p>
+                    <p class="name">John Doe</p>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="menu">
+                    <p class="title">Main</p>
+                    <ul>
+                        <li class="active">
+                            <a href="#">
+                                <i class="icon ph-bold ph-house-simple"></i>
+                                <span class="text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon ph-bold ph-user"></i>
+                                <span class="text">Audience</span>
+                                <i class="arrow ph-bold ph-caret-down"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">
+                                        <span class="text">Users</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="text">Subscribers</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon ph-bold ph-file-text"></i>
+                                <span class="text">Posts</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon ph-bold ph-calendar-blank"></i>
+                                <span class="text">Schedules</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon ph-bold ph-chart-bar"></i>
+                                <span class="text">Income</span>
+                                <i class="arrow ph-bold ph-caret-down"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">
+                                        <span class="text">Earning</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="text">funds</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="text">Declines</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="text">Payouts</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu">
+
+                </div>
+            </div>
+
+            <div class="menu">
+                <p class="title">Account</p>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="icon ph-bold ph-info"></i>
+                            <span class="text">Help</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon ph-bold ph-gear"></i>
+                            <span class="text">Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon ph-bold ph-sign-out"></i>
+                            <span class="text">Logout</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+        <!-- ================end of side bar menu =============== -->
+
+        <!--=============== HOME ===============-->
+        <div class="container section section__height" id="home">
+            <div class="content">
+                <!-- Product Section section -->
+                <section class="bg-white" >
+                    <!-- view product -->
+                    
+                    <div class = "card-wrapper">
+                        <div class = "card">
+                          <!-- card left -->
+                          <div class = "product-imgs">
+                            <div class = "img-display">
+                              <div class = "img-showcase">
+                                <img src = "assets/img/Pasted image.png" alt = "shoe image">
+                                <img src = "product-image/category/automatic Pump controller/Screenshot_12-4-2024_64938_www.alibaba.com.jpeg" alt = "shoe image">
+                                <img src = "product-image/category/automatic Pump controller/Screenshot_12-4-2024_65026_www.alibaba.com.jpeg" alt = "shoe image">
+                                <img src = "product-image/category/automatic Pump controller/Screenshot_12-4-2024_6508_www.alibaba.com.jpeg" alt = "shoe image">
+                              </div>
+                            </div>
+                            <!-- <div class = "img-select">
+                              <div class = "img-item">
+                                <a href = "#" data-id = "1">
+                                  <img src = "product-image/category/automatic Pump controller/Screenshot_12-4-2024_64914_www.alibaba.com.jpeg" alt = "shoe image">
+                                </a>
+                              </div>
+                              <div class = "img-item">
+                                <a href = "#" data-id = "2">
+                                  <img src = "product-image/category/automatic Pump controller/Screenshot_12-4-2024_64938_www.alibaba.com.jpeg" alt = "shoe image">
+                                </a>
+                              </div>
+                              <div class = "img-item">
+                                <a href = "#" data-id = "3">
+                                  <img src = "product-image/category/automatic Pump controller/Screenshot_12-4-2024_65026_www.alibaba.com.jpeg" alt = "shoe image">
+                                </a>
+                              </div>
+                              <div class = "img-item">
+                                <a href = "#" data-id = "4">
+                                  <img src = "product-image/category/automatic Pump controller/Screenshot_12-4-2024_6508_www.alibaba.com.jpeg" alt = "shoe image">
+                                </a>
+                              </div>
+                            </div> -->
+                          </div>
+                          <!-- card right -->
+                          <div class = "product-content">
+                            <h4 class = "product-title">Iphone 11</h4>
+                            <a href = "#" class = "product-link">22.00 Unit</a>
+                            <div class = "product-rating">
+                
+                              <span>In good condition</span>
+                            </div>
+                    
+                            <div class = "product-price">
+                              <p class = "last-price">Cost: <span>2,6000 FRW</span></p>
+                              <p class = "new-price">Sell: <span>12,500 FRW</span></p>
+                            </div>
+                    
+                            
+                    
+                            <div class = "purchase-info">
+                              <!-- <input type = "number" min = "0" value = "1"> -->
+                              <button type = "button" class = "btn">
+                                NewParchcese</i>
+                              </button>
+                              <button type = "button" class = "btn">Edit</button>
+                              <button type = "button" class = "btn">Delete</button>
+                            </div>
+                          
+                    
+                          </div>
+                        </div>
+                      </div>
+                    
+                      </section>
+
+                <section class="box"></section>
+                <section class="box"></section>
+            </div>
+
+        </div>
+
+        <!--=============== ABOUT ===============-->
+        <!-- <section class="container section section__height" id="about">
+            <h2 class="section__title">About</h2>
+        </section> -->
+
+        <!--=============== SKILLS ===============-->
+        <!-- <section class="container section section__height" id="skills">
+            <h2 class="section__title">Skills</h2>
+        </section> -->
+
+        <!--=============== PORTFOLIO ===============-->
+        <!-- <section class="container section section__height" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+        </section> -->
+
+        <!--=============== CONTACTME ===============-->
+        <!-- <section class="container section section__height" id="contactme">
+            <h2 class="section__title">Contactme</h2>
+        </section> -->
+    </main>
+
+
+    <!--=============== MAIN JS ===============-->
+    <script src="https://kit.fontawesome.com/9e5ba2e3f5.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+        integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+        crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/main.jss"></script>
+    <!-- <script src="assets/js/stock-list.js"></script> -->
+    <script src="assets/js/chat.js"></script>
+</body>
+
+</html>

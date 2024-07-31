@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Sale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button class="back-button">&larr;</button>
+            <h1>Add Sale</h1>
+        </div>
+        
+        <div class="form-section">
+            <button class="choose-customer" onclick="openModal('customerModal')">+ Choose Customer</button>
+            <button class="add-product" onclick="openModal('productModal')">+ Add Product</button>
+            <input type="date" id="date" value="2024-07-31">
+        </div>
+        
+        <table class="product-table">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Detail</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0</td>
+                    <td></td>
+                    <td>0</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="form-section">
+            <label>Discount</label>
+            <input type="text" placeholder="%" class="discount">
+            <input type="text" placeholder="0.00">
+
+            <label>Tax</label>
+            <button class="tax-button">Flat Rate</button>
+            <input type="text" placeholder="0.00">
+
+            <label>Shipping</label>
+            <input type="text" placeholder="0.00">
+        </div>
+        
+        <div class="form-section">
+            <label>Tracking Number</label>
+            <input type="text" placeholder="Tracking Number">
+        </div>
+
+        <div class="summary">
+            <div class="total">
+                <span>Total</span>
+                <span>0.00</span>
+            </div>
+            <div class="customer-paid">
+                <span>Customer Paid</span>
+                <span>0.00</span>
+            </div>
+            <div class="due">
+                <span>Due</span>
+                <span class="red">0.00</span>
+            </div>
+            <div class="profit">
+                <span>Profit</span>
+                <span class="red">0.00</span>
+            </div>
+        </div>
+        
+        <div class="form-section">
+            <label>Notes</label>
+            <input type="text" placeholder="Notes">
+        </div>
+        
+        <div class="form-section">
+            <label>Order No</label>
+            <input type="text" value="3">
+            <span class="note">Change it only if you need to</span>
+        </div>
+        
+        <div class="form-section">
+            <label>Status</label>
+            <select>
+                <option>Completed</option>
+                <option>Pending</option>
+            </select>
+        </div>
+        
+        <div class="form-section">
+            <label>Payment Type</label>
+            <select>
+                <option>Bank transfer</option>
+                <option>Credit card</option>
+                <option>Cash</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Customer Modal -->
+    <div id="customerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('customerModal')">&times;</span>
+            <h2>Choose Customer</h2>
+            <!-- Customer selection content -->
+        </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('productModal')">&times;</span>
+            <h2>Choose Product</h2>
+            <input type="text" placeholder="Search..">
+            <select>
+                <option>Show All</option>
+                <!-- Add other filter options here -->
+            </select>
+            <div class="product-list">
+                <!-- Example product item -->
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/50" alt="Product Image">
+                    <div class="product-info">
+                        <h3>iPhone 11</h3>
+                        <p>cost: <span class="cost">250.00</span> sell: <span class="sell">500.00</span></p>
+                    </div>
+                    <button class="product-price">19.00</button>
+                </div>
+                <!-- Add more product items here -->
+            </div>
+            <button class="close-button" onclick="closeModal('productModal')">Close</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
